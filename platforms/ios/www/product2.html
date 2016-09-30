@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi"
+	/>
+
+	<title>Product detail</title>
+
+	<style>
+		@import 'ui/css/evothings-app.css';
+		@import 'ui/css/flexslider.css';
+	</style>
+
+	<script src="cordova.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery.flexslider-min.js"></script>
+	<script src="app.js"></script>
+
+	<script>
+		$(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slides", start: function(slider) {
+            $('body').removeClass('loading');
+          }
+        });
+      });
+	</script>
+
+</head>
+
+<body>
+
+	<header>
+		<button class="back" onclick="window.location.href='index.html'">
+			<img src="ui/images/arrow-left.svg" />
+		</button>
+
+		<img class="logotype" src="ui/images/amida.png" alt="Evothings" />
+
+		<!--<button class="menu" onclick=""><img src="ui/images/menu.svg" /></button>-->
+	</header>
+
+
+	<div id="productdetail">
+		<div id="info">
+			<h3> Amadana USBスピーカー </h3>
+		</div>
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<img src="ui/images/product2/speaker1.jpg" />
+				</li>
+				<li>
+					<img src="ui/images/product2/speaker2.jpg" />
+				</li>
+				<li>
+					<img src="ui/images/product2/speaker3.jpg" />
+				</li>
+				<li>
+					<img src="ui/images/product2/speaker4.jpg" />
+				</li>
+				<li>
+					<img src="ui/images/product2/speaker5.jpg" />
+				</li>
+				<li>
+					<img src="ui/images/product2/speaker6.jpg" />
+				</li>
+				<li>
+					<img src="ui/images/product2/speaker7.jpg" />
+				</li>
+			</ul>
+		</div>
+
+		<br>
+
+		<table style="width:100%">
+			<tr>
+				<th width="30%">
+					<div id="info">
+						<h4>品番</h4>
+					</div>
+				</th>
+				<th width="70%">
+					<div id="info">
+						<h4>PS-233</h4>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th width="30%"> 
+					<div id="info">
+						<h4>外形寸法</h4>
+					</div>
+				</th>
+				<th width="70%">
+					<div id="info">
+						<h4>85 (W) x 141 (H) x 109㎜ (D) (1台)</h4>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th width="30%">
+					<div id="info">
+						<h4>電源</h4>
+					</div>
+				</th>
+				<th width="70%">
+					<div id="info">
+						<h4>USBバスパワー</h4>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th width="30%">
+					<div id="info">
+						<h4>定格消費電力</h4>
+					</div>
+				</th>
+				<th width="70%">
+					<div id="info">
+						<h4>2.5W</h4>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th width="30%">
+					<div id="info">
+						<h4>アンプ出力</h4>
+					</div>
+				</th>
+				<th width="70%">
+					<div id="info">
+						<h4>10W+10W、瞬間最大出力</h4>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th width="30%">
+					<div id="info">
+						<h4>接続環境</h4>
+					</div>
+				</th>
+				<th width="70%">
+					<div id="info">
+						<h4>Mac OS 9.1・OSX 10.1　以降Windows XP・Vista・7</h4>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th width="30%">
+					<div id="info">
+						<h4>質量</h4>
+					</div>
+				</th>
+				<th width="70%">
+					<div id="info">
+						<h4>約1.3kg</h4>
+					</div>
+				</th>
+			</tr>
+			<tr>
+				<th width="30%">
+					<div id="info">
+						<h4>価格</h4>
+					</div>
+				</th>
+				<th width="70%">
+					<div id="info">
+						<h4>16,200円（税込）</h4>
+					</div>
+				</th>
+			</tr>
+		</table>
+	</div>
+
+	<br>
+
+	<table style="width:100%">
+
+		<tr>
+			<th>
+				<button class="button--large" onclick="showMessage()" id="tryBtn">Try it</button>
+			</th>
+
+			<th>
+				<button class="button--large" onclick="setOrder('product2')">Add to cart</button>
+			</th>
+		</tr>
+	</table>
+
+</body>
+
+</html>

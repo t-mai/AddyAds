@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi"
+	/>
+
+	<title>Product detail</title>
+
+	<style>
+		@import 'ui/css/evothings-app.css';
+		@import 'ui/css/flexslider.css';
+	</style>
+
+	<script src="cordova.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery.flexslider-min.js"></script>
+	<script src="app.js"></script>
+
+	<script>
+		$(window).load(function() {
+		
+		
+        $('.flexslider').flexslider({
+          animation: "slides", start: function(slider) {
+            $('body').removeClass('loading');
+          }
+        });
+      });
+	</script>
+
+</head>
+
+<body>
+
+	<header>
+		<button class="back" onclick="window.location.href='index.html'">
+			<img src="ui/images/arrow-left.svg" />
+		</button>
+
+		<img class="logotype" src="ui/images/amida.png" alt="Evothings" />
+
+		<!--<button class="menu" onclick=""><img src="ui/images/menu.svg" /></button>-->
+	</header>
+
+	<div id="productdetail">
+	</div>
+
+	<table style="width:100%">
+		<tr>
+			<th>
+				<button class="button--large" onclick="showMessage()" id="tryBtn">Try it</button>
+			</th>
+
+			<th>
+				<a class="button--large" href="order.html">Add to cart</a>
+			</th>
+		</tr>
+	</table>
+
+</body>
+
+</html>

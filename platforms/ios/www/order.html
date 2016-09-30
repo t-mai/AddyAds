@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+		shrink-to-fit=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+
+	<title>Order</title>
+
+	<style>
+		@import 'ui/css/evothings-app.css';
+		@import 'ui/css/flexslider.css';
+	</style>
+
+	<script src="cordova.js"></script>
+	<script src="libs/jquery/jquery.js"></script>
+	<script src="libs/evothings/evothings.js"></script>
+	<script src="libs/evothings/ui/ui.js"></script>
+	<script src="libs/evothings/eddystone/eddystone.js"></script>
+	<script src="app.js"></script>
+
+</head>
+
+<body onload="displayOrder()">
+
+	<header>
+		<button class="back" onclick="window.location.href='index.html'">
+			<img src="ui/images/arrow-left.svg" />
+		</button>
+
+		<img class="logotype" src="ui/images/amida.png" alt="Evothings" />
+
+		<!--<button class="menu" onclick=""><img src="ui/images/menu.svg" /></button>-->
+	</header>
+
+	<div id="info">
+		<h1>Your order:</h1>
+		<ul id="orders"> </ul>
+		<h2>Total: ￥ <span id="total"> </span> </h2>
+		<table style="width:80%" align="center">
+			<tr>
+				<th>
+					<button class="button--large" onclick="pay()">Pay with Yamato</button>
+				</th>
+			</tr>
+		</table>
+		<h5>Free 1-day delivery with Yamato</h5>
+	</div>
+
+</body>
+
+</html>

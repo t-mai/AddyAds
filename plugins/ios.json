@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-ble": {
+            "PACKAGE_NAME": "addyads.co.jp"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "addyads.co.jp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "addyads.co.jp"
+        }
+    },
+    "dependent_plugins": {}
+}
